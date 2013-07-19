@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* Copyright 2010, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/month"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:paddingTop="1dip" >
+
+        <include
+            layout="@layout/month_name_layout"
+            android:visibility="@string/quick_head_below_visibility" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dip"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/month_name"
+            style="@style/MonthView_MiniMonthLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/day_names"
+            layout="@layout/full_month_header" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/calendar_grid_line_inner_vertical_color" />
+
+        <include
+            android:id="@+id/week_list"
+            layout="@android:layout/list_content" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_month_view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_month_view_bottom_height"
+        android:background="@drawable/cal_bg_list_02"
+        android:visibility="@string/quick_head_below_visibility" >
+
+        <TextView
+            android:id="@+id/tv_addEvent"
+            style="@style/Calendar_Display_Setting_Clicked_Row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cal_bg_list_02"
+            android:drawableLeft="@drawable/cal_noevent"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dip"
+            android:text="@string/add_event_notice"
+            android:textSize="16sp"
+            android:textColor="#FF808080"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/lv_bottom_eventList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cal_bg_list_02"
+            android:divider="#FF6F6D6C"
+            android:dividerHeight="1dip"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

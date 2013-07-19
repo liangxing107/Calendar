@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:calendar="http://schemas.android.com/apk/res/com.android.calendar"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/agenda_day_header_height"
+    android:background="@drawable/splanner_agenda_expandable_item_header"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal" >
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/agenda_day_header_text_padding_left"
+        android:paddingRight="@dimen/agenda_day_header_text_padding_right"
+        android:textColor="@color/agenda_header_text"
+        android:textSize="@dimen/agenda_day_header_text_size"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/expand_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:clickable="false"
+        android:focusable="false"
+        android:src="@drawable/splanner_list_icon_expandable_open"
+        android:layout_marginRight="@dimen/agenda_day_header_image_margin_right"
+        android:scaleType="center"
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/group_title_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="7dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/img_searchIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-6dip"
+            android:background="@drawable/calendar_icon_selector"
+            android:contentDescription="@string/app_label"
+            android:focusable="false" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-3dip"
+            android:layout_marginTop="-6dip"
+            android:background="@drawable/arrow_down_selector"
+            android:contentDescription="@string/app_label"
+            android:focusable="false" />
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/img_searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginLeft="-7dip"
+        android:iconifiedByDefault="false"
+        android:layout_gravity="center_vertical"
+        android:queryHint="@string/search" />
+    
+    <!-- android:layout_marginBottom="-3dip"
+        android:layout_marginTop="-7dip"
+        android:layout_marginLeft="-7dip" -->
+
+</LinearLayout>

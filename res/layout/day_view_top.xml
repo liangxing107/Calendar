@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="-7dip"
+    android:layout_marginTop="-7dip"
+    android:background="@drawable/splanner_agenda_expandable_item_header"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/btn_arrow_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:clickable="true"
+        android:contentDescription="@string/app_label"
+        android:src="@drawable/arrow_left_selector" />
+
+    <TextView
+        android:id="@+id/tv_day_view_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_weight="1"
+        android:background="@null"
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/btn_arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dip"
+        android:clickable="true"
+        android:contentDescription="@string/app_label"
+        android:src="@drawable/arrow_right_selector" />
+
+</LinearLayout>

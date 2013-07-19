@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/edit_event_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/subject_location"
+            style="@style/TextAppearance.EditEvent_Label_1"
+            android:layout_width="wrap_content"
+            android:layout_height="37.0dip"
+            android:text="@string/where_label" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6.0dip"
+        android:focusable="true"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/splanner_textfield_selector"
+            android:capitalize="sentences"
+            android:hint="@string/hint_where"
+            android:imeOptions="actionDone|flagNoEnterAction"
+            android:minHeight="@dimen/edit_event_textfield_min_height"
+            android:paddingLeft="14.0dip"
+            android:singleLine="true"
+            android:textSize="18.0dip" />
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="@dimen/edit_event_location_imagebutton_width"
+            android:layout_height="@dimen/edit_event_location_imagebutton_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/btn_selector_background_for_edit"
+            android:gravity="center_vertical"
+            android:src="@drawable/cal_icon_04" />
+
+        <ImageButton
+            android:id="@+id/current_location"
+            android:layout_width="@dimen/edit_event_location_imagebutton_width"
+            android:layout_height="@dimen/edit_event_location_imagebutton_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginRight="12.0dip"
+            android:background="@drawable/btn_selector_background_for_edit"
+            android:gravity="center_vertical"
+            android:src="@drawable/cal_icon_02" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0" >
+
+        <com.google.android.maps.MapView
+            android:id="@+id/mapview_select"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:apiKey="0rQfxl7VulQe4w5EPVVvE4UYAIOYuJzpkodwHjw"
+            android:clickable="true"
+            android:enabled="true" />
+    </FrameLayout>
+
+</LinearLayout>

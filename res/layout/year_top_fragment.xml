@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="-6dip"
+    android:layout_marginTop="-6dip"
+    android:background="@color/year_layout_bg_color"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/btn_prevMonth_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:clickable="true"
+        android:contentDescription="@string/app_label"
+        android:src="@drawable/arrow_left_selector" />
+
+    <TextView
+        android:id="@+id/btn_currentMonth_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_weight="1"
+        android:background="@null"
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="#FF666666"
+        android:textSize="@dimen/year_view_current_month_text_size"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/btn_nextMonth_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dip"
+        android:clickable="true"
+        android:contentDescription="@string/app_label"
+        android:src="@drawable/arrow_right_selector" />
+
+</LinearLayout>

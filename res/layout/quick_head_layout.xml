@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:background="@drawable/cal_bg_top"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/layout_goto_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="4dip"
+        android:layout_weight="1" >
+
+        <ImageButton
+            android:id="@+id/imgBtn_goto_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/splanner_actionbar_long_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/goto_today"
+            android:textColor="@color/btn_text_gray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_set_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dip"
+        android:layout_weight="1" >
+
+        <ImageButton
+            android:id="@+id/imgBtn_set_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/splanner_actionbar_long_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_label"
+            android:textColor="@color/btn_text_gray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_add_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dip"
+        android:layout_weight="1" >
+
+        <ImageButton
+            android:id="@+id/imgBtn_add_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/splanner_actionbar_button" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bt_add" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_view_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="@string/quick_head_below_visibility" >
+
+        <ImageButton
+            android:id="@+id/imgBtn_view_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/splanner_actionbar_index_button" />
+
+        <com.android.calendar.month.RotateImageView
+            android:id="@+id/rotateImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bt_viewtype_change" />
+    </RelativeLayout>
+
+</LinearLayout>

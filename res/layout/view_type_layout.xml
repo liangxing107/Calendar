@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.android.calendar.RotateTextView
+        android:id="@+id/btn_view_type_year"
+        style="@style/Btn_View_Type"
+        android:text="@string/year_lable" />
+
+    <com.android.calendar.RotateTextView
+        android:id="@+id/btn_view_type_month"
+        style="@style/Btn_View_Type"
+        android:text="@string/month_view" />
+
+    <com.android.calendar.RotateTextView
+        android:id="@+id/btn_view_type_week"
+        style="@style/Btn_View_Type"
+        android:text="@string/week_view" />
+
+    <com.android.calendar.RotateTextView
+        android:id="@+id/btn_view_type_day"
+        style="@style/Btn_View_Type"
+        android:text="@string/day_lable" />
+
+    <com.android.calendar.RotateTextView
+        android:id="@+id/btn_view_type_agenda"
+        style="@style/Btn_View_Type"
+        android:text="@string/agenda_view" />
+
+    <com.android.calendar.RotateTextView
+        android:id="@+id/btn_view_type_task"
+        style="@style/Btn_View_Type"
+        android:text="@string/task" />
+
+</LinearLayout>

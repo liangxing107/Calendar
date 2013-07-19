@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <include layout="@layout/display_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_selectAll_row"
+                style="@style/Calendar_Display_Setting_Clicked_Row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_selectAll"
+                    style="@style/Calendar_Display_Setting_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/select_all" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_selectAll"
+                    style="@style/Calendar_Display_Setting_Checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/img_diver01"
+                style="@style/Calendar_Display_Setting_Horizontal_Diviver" />
+
+            <LinearLayout
+                android:id="@+id/my_calendar_row"
+                style="@style/Calendar_Display_Setting_Clicked_Row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+			 >
+
+                <View style="@style/Calendar_Display_Setting_Left_Vertical_Diviver" />
+
+                <TextView
+                    android:id="@+id/tv_my_calendar"
+                    style="@style/Calendar_Display_Setting_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="1"
+                    android:text="@string/my_calendar" />
+<!--                    
+
+                    style="@style/Calendar_Display_Setting_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+					android:layout_marginLeft="15dip" -->
+
+                <CheckBox
+                    android:id="@+id/checkBox_my_calendar"
+                    style="@style/Calendar_Display_Setting_Checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/img_diver02"
+                style="@style/Calendar_Display_Setting_Horizontal_Diviver" />
+
+            <LinearLayout
+                android:id="@+id/my_task_row"
+                style="@style/Calendar_Display_Setting_Clicked_Row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <View style="@style/Calendar_Display_Setting_Left_Vertical_Diviver" />
+
+                <TextView
+                    android:id="@+id/tv_my_task"
+                    style="@style/Calendar_Display_Setting_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="1"
+                    android:text="@string/my_task" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_my_task"
+                    style="@style/Calendar_Display_Setting_Checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/img_diver03"
+                style="@style/Calendar_Display_Setting_Horizontal_Diviver" />
+
+            <LinearLayout
+                android:id="@+id/layout_display_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/diaplay_settting_layout_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="4dip" >
+
+                <TextView
+                    style="@style/Calendar_Display_Setting_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:minHeight="20dip"
+                    android:text="@string/display_birthday"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/image_display_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_label"
+                    android:minHeight="20dip"
+                    android:src="@drawable/expandable_open" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/img_diver04"
+                style="@style/Calendar_Display_Setting_Horizontal_Diviver" />
+
+            <LinearLayout
+                android:id="@+id/contacts_birthday_row"
+                style="@style/Calendar_Display_Setting_Clicked_Row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <View style="@style/Calendar_Display_Setting_Left_Vertical_Diviver" />
+
+                <TextView
+                    android:id="@+id/tv_contacts_birthday"
+                    style="@style/Calendar_Display_Setting_TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="1"
+                    android:text="@string/contacts_birthday" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_contacts_birthday"
+                    style="@style/Calendar_Display_Setting_Checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/img_diver05"
+                style="@style/Calendar_Display_Setting_Horizontal_Diviver" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_add_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/add_account"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

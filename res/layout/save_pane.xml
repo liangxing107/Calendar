@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dip"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:layout_marginTop="4dip" >
+
+    <Button
+        android:id="@+id/btn_done_savePane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_save_selector"
+        android:focusable="false"
+        android:minHeight="24dip"
+        android:text="@string/save_lable"
+        android:textColor="#FFE5E1D2"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/d0"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/btn_done_savePane"
+        android:layout_alignTop="@id/btn_done_savePane"
+        android:layout_marginBottom="3dip"
+        android:layout_marginLeft="1dip"
+        android:layout_marginRight="1dip"
+        android:layout_marginTop="3dip"
+        android:layout_toLeftOf="@id/btn_done_savePane"
+        android:background="@color/white"
+        android:focusable="false" />
+
+    <Button
+        android:id="@+id/btn_cancel_savePane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/d0"
+        android:background="@drawable/btn_save_selector"
+        android:focusable="false"
+        android:minHeight="24dip"
+        android:text="@string/discard_label"
+        android:textColor="#FFE5E1D2"
+        android:textSize="14sp" />
+
+</RelativeLayout>
